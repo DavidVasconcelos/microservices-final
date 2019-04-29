@@ -26,11 +26,16 @@ Url: http://localhost:8081/statistics -> GET
   "count": 1
 }
 
-#Docker
+#Docker Build
 ```sh
 docker build -f Dockerfile -t microservices-final
+```
 
+## Executar essas duas instancias 
+
+```sh
 docker run -p 8081:8081 -t microservices-final
+docker run -p 8082:8081 -t microservices-final
 ```
 
 
