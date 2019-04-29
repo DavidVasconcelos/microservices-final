@@ -31,7 +31,7 @@ Url: http://localhost:8081/statistics -> GET
 docker build -f Dockerfile -t microservices-final
 ```
 
-## Executar essas duas instancias 
+## Executar duas instancias 
 
 ```sh
 docker run -p 8081:8081 -t microservices-final
