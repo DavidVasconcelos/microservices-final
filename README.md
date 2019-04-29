@@ -1,6 +1,6 @@
 # Api Transaction - Microservices-final
 
-##Documentation:
+## Documentation:
 http://localhost:8081/swagger-ui.html
 
 ## Salvar transaction:
@@ -26,7 +26,7 @@ Url: http://localhost:8081/statistics -> GET
   "count": 1
 }
 
-#Docker Build
+# Docker Build
 ```sh
 docker build -f Dockerfile -t microservices-final
 ```
