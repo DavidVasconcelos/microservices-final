@@ -3,14 +3,19 @@ package br.com.fiap.microservicesfinal.controller;
 import br.com.fiap.microservicesfinal.model.Statistic;
 import br.com.fiap.microservicesfinal.model.Transaction;
 import br.com.fiap.microservicesfinal.service.TransactionService;
-import io.swagger.annotations.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.net.URI;
 
 @RestController
 @Api(value = "Transaction", description = "Transaction REST API")
