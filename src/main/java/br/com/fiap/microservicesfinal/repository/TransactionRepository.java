@@ -15,7 +15,8 @@ public class TransactionRepository {
 	private static Collection<Transaction> transactions = Collections.synchronizedCollection(new ArrayList<>());
 	
 	public void save(final Transaction transaction){
-        this.transactions.add(transaction);
+
+	    this.transactions.add(transaction);
     }
 
     public List<Transaction> getAll() {

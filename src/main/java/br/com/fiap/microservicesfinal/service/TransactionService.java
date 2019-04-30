@@ -17,7 +17,7 @@ public class TransactionService {
     @Autowired
     private TransactionRepository transactionRepository;
 
-    public void save(Transaction transaction) {
+    public void save(final Transaction transaction) {
 
         if (isHigherThanSixtySeconds(transaction.getTimestamp()))
             throw new InvalidTransactionException();
